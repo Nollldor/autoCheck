@@ -1,15 +1,54 @@
 .radio {
+    position: relative;
+    width: 0;
+    height: 0;
+    margin-right: 40px;
 }
 
 .radio::before {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    border: 1px solid black;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.radio::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: black;
+    z-index: 10;
 }
 
 
-.radio:checked::before {
+.radio:checked::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: black;
 }
 
 .label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    height: 25px;
 }
 
 .options {
+    padding: 0px 10px 10px 20px;
+}
+
+.span {
+    display: flex;
+    flex-direction: column;
 }
