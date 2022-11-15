@@ -1,23 +1,45 @@
 .item {
+    min-width: 200px;
+    text-align: center;
 }
 
 .item:last-of-type {
 }
 
 .users {
+    min-width: 200px;
 }
 
 .buttonsContainer {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .container {
 }
 
+.headRow {
+    background: #E5E5E5;
+}
+
 .thead {
+    height: 36px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: black;
+    text-align: center;
 }
 
 .nameCol {
+    min-width: 100px;
 }
 
 .ageCol {
+    min-width: 50px;
+
 }
