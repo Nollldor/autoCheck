@@ -11,7 +11,7 @@
 }
 
 .buttonsContainer {
-    width: 40%;
+    width: 450px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
@@ -41,5 +41,4 @@
 
 .ageCol {
     min-width: 50px;
-
 }
