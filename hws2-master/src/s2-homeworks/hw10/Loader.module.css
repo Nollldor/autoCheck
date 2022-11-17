@@ -1,3 +1,20 @@
 .loader {
     /*свг и/или анимация*/
+    width: 50px;
+    height: 50px;
+    background: url("./icons/preloader.svg");
+
+    animation-duration: 1.5s;
+    animation-name: loaderRotate;
+
+}
+
+@keyframes loaderRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
