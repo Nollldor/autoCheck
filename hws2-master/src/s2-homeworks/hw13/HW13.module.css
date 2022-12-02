@@ -1,22 +1,44 @@
 .buttonsContainer {
+    display: flex;
+    width: 50%;
+    min-width: 550px;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .responseContainer {
+    min-width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
 }
 
 .imageContainer {
+    margin-right: 50px;
 }
 
 .image {
+    width: 300px;
 }
 
 .textContainer{
+    min-width: 300px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .code {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 12px;
 }
 
 .text {
+
 }
 .info {
+
 }
