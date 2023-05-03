@@ -54,7 +54,9 @@ const HW15 = () => {
                 // делает студент
 
                 // сохранить пришедшие данные
-
+                res && setTechs(res.data.techs)
+                res && setTotalCount(res.data.totalCount)
+                setLoading(false)
                 //
             })
     }
@@ -63,9 +65,11 @@ const HW15 = () => {
         // делает студент
 
         // setPage(
+        setPage(newPage)
         // setCount(
-
+        setCount(newCount)
         // sendQuery(
+        sendQuery({page: newPage, count: newCount, sort})
         // setSearchParams(
 
         //
@@ -75,9 +79,11 @@ const HW15 = () => {
         // делает студент
 
         // setSort(
+        setSort(newSort)
         // setPage(1) // при сортировке сбрасывать на 1 страницу
-
+        setPage(1)
         // sendQuery(
+        sendQuery({page: 1, count, sort: newSort})
         // setSearchParams(
 
         //
